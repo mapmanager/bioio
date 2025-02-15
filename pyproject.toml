@@ -31,17 +31,26 @@ dependencies = [
   "bioio-base>=0.9.1",
   "dask[array]>=2021.4.1",
   "fsspec>=2022.8.0",
-  "imageio[ffmpeg]>=2.11.0,<2.28.0",
-  "ngff-zarr>=0.8.2,<0.9.1",
-  "numpy>=1.21.0,<2.0.0",
+  
+  # abb removed, might be downgrading scikit (sci-kit-image to 0.22.0 from 0.25.1 
+  # "imageio[ffmpeg]>=2.11.0,<2.28.0",
+  
+  # abb removed
+  #"ngff-zarr>=0.8.2,<0.9.1",
+  # abb
+  #"numpy>=1.21.0,<2.0.0",
+  "numpy",
   "ome-types[lxml]>=0.4.0",
-  "ome-zarr>=0.6.1",
+  # abb removed
+  #"ome-zarr>=0.6.1",
   # This version was revoked from PyPi, but in case of using a stale version
   # or a private package index, this will prevent usage
   "scikit-image!=0.23.0",
   "semver>=3.0.1",
   "tifffile>=2021.8.30",
-  "zarr>=2.6.0",
+  # abb
+  #"zarr>=2.6.0",
+  "zarr>=2.6,<2.16.0",
 ]
 
 [project.urls]
